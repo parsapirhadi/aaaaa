@@ -27,6 +27,10 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.myapplication.R;
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.GridLabelRenderer;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -40,7 +44,7 @@ public class SingleRootActivity extends AppCompatActivity {
     Dialog dialog;
     TextView textplay;
     ImageView notch;
-
+    GraphView graphView;
     Button line,btn,montage,bluetooth,play;
 
     int notchcount;
@@ -208,6 +212,35 @@ public class SingleRootActivity extends AppCompatActivity {
         });
         DrawerLayout drawerLayout=findViewById(R.id.draver_singleroot);
         btn.setOnClickListener(view -> drawerLayout.openDrawer(GravityCompat.START));
+/////////////////////////////////////////////////////////////////////////////////////////////
+        graphView = findViewById(R.id.singlegraphview);
+
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[]{
+
+                new DataPoint(0, 1),
+                new DataPoint(1, 3),
+                new DataPoint(2, 4),
+                new DataPoint(3, 9),
+                new DataPoint(4, 6),
+                new DataPoint(5, 3),
+                new DataPoint(6, 6),
+                new DataPoint(7, 1),
+                new DataPoint(8, 2)
+        });
+        graphView.setTitle("My Graph View");
+       //// graphView.setTitleTextSize(9);
+
+        graphView.addSeries(series);
+
+        series.setColor(Color.rgb(30,30,30));
+
+        series.setDrawBackground(false);
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
     }
 
     private void FindViewById() {

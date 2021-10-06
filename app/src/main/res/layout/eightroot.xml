@@ -8,7 +8,7 @@
     tools:context=".V.EightRootActivity">
 <androidx.drawerlayout.widget.DrawerLayout
 
-
+    android:nestedScrollingEnabled="false"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     tools:context=".V.MainActivity"
@@ -65,7 +65,7 @@
 
                 <TextView
                     android:id="@+id/eighttextplay"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
                     android:text="×1"
@@ -177,6 +177,61 @@
             tools:ignore="MissingConstraints" >
 
 
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/eightgraphview1"
+                />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/eightgraphview2"
+                />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/eightgraphview3"
+                />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/eightgraphview4"
+                />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/eightgraphview5"
+                />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/eightgraphview6"
+                />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/eightgraphview7"
+                />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/eightgraphview8"
+                />
 
         </LinearLayout>
 

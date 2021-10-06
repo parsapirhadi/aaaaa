@@ -63,7 +63,7 @@
 
                 <TextView
                     android:id="@+id/singletextplay"
-                    android:layout_width="30dp"
+                    android:layout_width="40dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
                     android:text="×1"
@@ -173,7 +173,12 @@
             android:background="@drawable/main"
             tools:ignore="MissingConstraints" >
 
+<com.jjoe64.graphview.GraphView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
 
+    android:id="@+id/singlegraphview"
+    />
 
         </LinearLayout>
 
